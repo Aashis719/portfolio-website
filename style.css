@@ -431,10 +431,10 @@ a {
 .cir-card p:hover span {
   transform: rotate(0);
 }
-@media (max-width: 810px) { /* Target screens smaller than 768px */
+@media (max-width: 950px) { /* Target screens smaller than 768px */
     .cir-card {
         flex-direction: column; /* Stack items vertically */
-        gap: 0px; /* Add spacing between rows */
+        gap: 10px; /* Add spacing between rows */
         padding: 5em; /* Adjust padding for better spacing */
         height: auto;
         margin-right: 4em;
