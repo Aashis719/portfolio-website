@@ -434,10 +434,11 @@ a {
 @media (max-width: 950px) { /* Target screens smaller than 768px */
     .cir-card {
         flex-direction: column; /* Stack items vertically */
-        gap: 10px; /* Add spacing between rows */
+        gap: 20px; /* Add spacing between rows */
         padding: 5em; /* Adjust padding for better spacing */
         height: auto;
         margin-right: 4em;
+        margin: 20px auto;
     }
     .certificates{
         flex-direction: column; /* Stack items vertically */
@@ -449,10 +450,9 @@ a {
 @media (max-width: 610px) { 
     .cir-card {
         flex-direction: column; /* Stack items vertically */
-        gap: 0px; /* Add spacing between rows */
+        gap: 20px; /* Add spacing between rows */
         padding: 1em; /* Adjust padding for better spacing */
         height: auto;
-        margin-right: 4em;
     }
     .cir-card p span{
         min-width: auto;
