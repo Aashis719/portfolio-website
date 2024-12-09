@@ -12,6 +12,7 @@ body {
 }
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 70px;
 }
 a {
     text-decoration: none;
@@ -77,6 +78,49 @@ a {
 #nav ul li a:hover {
     color: #f39c12;
 }
+/* side bar  */
+.sidebar{
+    position:fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -5px 0px 10px black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    display: none;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.menu-button{
+    display: none;
+}
+/* for responsiveness */
+@media(max-width:550px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+@media(max-width:400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+
+
 
 /* Hero Section */
 #hero {
@@ -460,10 +504,6 @@ a {
     }
 }
 
-
-
-
-
 /* Contact Section */
 #contact {
     padding: 60px 20px;
@@ -471,8 +511,10 @@ a {
     background: #303030;
     color: #fff;
     text-align: center;
-    background: url(tom-calling.jpg);
-  background-size: contain;
+    background: #ecf0f1;
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
     background-position: left;
     position: relative;
 }
