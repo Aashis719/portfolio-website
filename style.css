@@ -390,7 +390,7 @@ a {
     background: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    padding: 20px;
+    padding: 20px 20px 150px 20px;
     text-align: center;
     transition: transform 0.3s ease;
 }
@@ -399,14 +399,34 @@ a {
 }
 .project h4 {
     font-size: 1.5rem;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: #2c3e50;
 }
 .project p {
     font-size: 1rem;
     color: #7f8c8d;
 }
-
+.project img{
+    height:100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.project-btn{
+    background-color: #000000;
+    color: white;
+  border-radius: 4px;
+    padding: 10px;
+    transition: all 0.3s;
+    margin-top: 4px;
+}
+.project-btn:hover{
+    box-shadow: 2px 2px 3px rgb(54, 53, 53);
+    scale: 1.1;
+}
+.project a{
+    color: white;
+    font-weight: bold;
+}
 /* certificates */
 .certificates{
     padding: 90px;
