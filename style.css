@@ -249,10 +249,10 @@ a {
 /* Skills Section */
 #skills {
     padding: 100px 20px 50px 20px;
-    /* background: #ffffff; */
-    background: url(about-back1.png);
-    background-size: cover;
-    background-attachment: fixed;
+    background: #000000;
+    /* background: url(about-back1.png); */
+    /* background-size: cover;
+    background-attachment: fixed; */
     overflow: hidden; /* Prevent overflow during animation */
     position: relative;
     text-align: center;
