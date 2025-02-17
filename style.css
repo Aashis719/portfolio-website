@@ -5,45 +5,51 @@
     box-sizing: border-box;
     color: black;
 }
+
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: #333;
 }
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 70px;
 }
+
 a {
     text-decoration: none;
 }
+
 /* scroll bar */
 *::-webkit-scrollbar {
     width: 12px;
-  }
-  
-  *::-webkit-scrollbar-track {
+}
+
+*::-webkit-scrollbar-track {
     background: rgb(255, 255, 255);
-  }
-  
-  *::-webkit-scrollbar-thumb {
+}
+
+*::-webkit-scrollbar-thumb {
     background-color: rgb(243, 156, 18);
     border-radius: 5px;
     box-shadow: 2px 7px 5px rgb(31, 31, 31);
-  }
+}
 
 
 /* Header */
-.container1{
+.container1 {
     display: flex;
     justify-content: space-between;
 }
-.logo-walla{
+
+.logo-walla {
     background-color: #000000;
     border-radius: 20px;
     padding: 10px 10px 2px 10px;
     height: 39px;
 }
+
 #nav {
     /* background: #2c3e50; */
     background: white;
@@ -55,19 +61,23 @@ a {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-bottom: 5px solid #f39c12;
 }
+
 #nav h1 {
     display: inline;
     font-size: 1.5rem;
     font-weight: bold;
 }
+
 #nav ul {
     list-style: none;
     float: right;
 }
+
 #nav ul li {
     display: inline-block;
     margin-left: 20px;
 }
+
 #nav ul li a {
     color: #000000;
     font-size: 1rem;
@@ -75,12 +85,14 @@ a {
     transition: color 0.3s ease;
     font-weight: bold;
 }
+
 #nav ul li a:hover {
     color: #f39c12;
 }
+
 /* responsive sidebar  */
-.sidebar{
-    position:fixed;
+.sidebar {
+    position: fixed;
     top: 0;
     right: 0;
     height: 100vh;
@@ -96,24 +108,30 @@ a {
     gap: 20px;
     display: none;
 }
-.sidebar li{
+
+.sidebar li {
     width: 100%;
 }
-.sidebar a{
+
+.sidebar a {
     width: 100%;
 }
-.menu-button{
+
+.menu-button {
     display: none;
 }
+
 /* for responsiveness */
-@media(max-width:550px){
-    .hideOnMobile{
+@media(max-width:550px) {
+    .hideOnMobile {
         display: none;
     }
-    .menu-button{
+
+    .menu-button {
         display: block;
     }
 }
+
 /* @media(max-width:400px){
     .sidebar{
         width: 100%;
@@ -139,16 +157,19 @@ a {
     /* background-position: center; */
     background-attachment: fixed;
 }
+
 #hero h2 {
     font-size: 2.5vw;
     margin-bottom: 15px;
     color: #fff;
 }
+
 #hero h2 span {
     color: #f39c12;
     font-weight: bold;
     font-size: 2.5vw;
 }
+
 #hero p {
     font-size: 1.2vw;
     margin-bottom: 20px;
@@ -164,42 +185,47 @@ a {
     font-weight: bold;
     transition: all 0.3s ease;
 }
+
 #hero .btn:hover {
     background: #dd8b08;
     color: #fff;
 }
 
 /* Hero's open-container */
-.open-container{
+.open-container {
     height: 20vh;
-    width:16vw;
+    width: 16vw;
     /* border: 2px solid purple; */
 }
 
 /* Hero's Socail Media  */
-.social_media{
+.social_media {
     height: 35vh;
-    width:10vw;
+    width: 10vw;
 }
-.media{
+
+.media {
     height: 100%;
     width: 100%;
     display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
-.social{
+
+.social {
     height: 20%;
     width: 20%;
-    
-   
+
+
 }
-.social i{
+
+.social i {
     transition: all 0.3s;
 }
-.social i:hover{
-   scale: 1.3;
+
+.social i:hover {
+    scale: 1.3;
     filter: drop-shadow(2px 1px 3px #ffffff);
 }
 
@@ -215,37 +241,44 @@ a {
     margin: 0px;
     /* box-shadow: 0px -2px 4px rgb(255 253 253); */
 }
+
 #about h3 {
     font-size: 2rem;
     margin-bottom: 20px;
     color: #2c3e50;
 }
+
 #about p {
     font-size: 1.2rem;
     line-height: 1.8;
     max-width: 800px;
     margin: 0 auto;
 }
-.card-inner{
+
+.card-inner {
     border: 2px solid #0e0e0d;
     border-radius: 30px 10px 30px 10px;
     padding: 10px 10px 5px 10px;
     background-color: #303030;
     transition: all 0.5s;
 }
-.card-inner img{
+
+.card-inner img {
     border: 2px solid #0e0e0d;
     border-radius: 30px 10px 30px 10px;
     background-color: wheat;
 }
-.card-inner img:hover{
+
+.card-inner img:hover {
     scale: 1.2;
     transition: all 0.5s;
     border-radius: 10px 40px 10px 40px;
 }
-.card-inner:hover{
+
+.card-inner:hover {
     border-radius: 10px 40px 10px 40px;
 }
+
 /* Skills Section */
 #skills {
     padding: 100px 20px 50px 20px;
@@ -253,28 +286,35 @@ a {
     /* background: url(about-back1.png); */
     /* background-size: cover;
     background-attachment: fixed; */
-    overflow: hidden; /* Prevent overflow during animation */
+    overflow: hidden;
+    /* Prevent overflow during animation */
     position: relative;
     text-align: center;
 
 }
-.skill-container{
+
+.skill-container {
     /* margin-left: 250px;
     margin-right: 250px; */
     padding: 20px 200px 80px 200px;
     overflow: hidden;
 }
+
 #skills h3 {
     font-size: 2rem;
     margin-bottom: 20px;
     color: #ffffff;
 }
+
 .skills-grid {
     display: flex;
-    gap: 20px; /* Space between skills */
+    gap: 20px;
+    /* Space between skills */
     position: relative;
-    width: max-content; /* Allow infinite width for scrolling */
-    animation: scrollLeft 15s linear infinite; /* Smooth scrolling */
+    width: max-content;
+    /* Allow infinite width for scrolling */
+    animation: scrollLeft 15s linear infinite;
+    /* Smooth scrolling */
 }
 
 .skill {
@@ -291,76 +331,88 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
-    transition-duration: 1s;
+    cursor: cell;
+    /* transition-duration: 1s; */
     overflow: hidden;
-  }
-  
-  
-  .skill:hover {
+}
+
+
+.skill:hover {
+    background-position: right;
+    /* transition-duration: 1s; */
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffd277;
+}
+
+.skill:hover::before {
     background-position: right;
     transition-duration: 1s;
-  }
-  
-  .skill:hover::before {
-    background-position: right;
-    transition-duration: 1s;
-  }
-  
-  .skill:active {
+}
+
+.skill:active {
     transform: scale(0.95);
-  }
+}
 
 /* Keyframes for infinite leftward animation */
 @keyframes scrollLeft {
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(-50%);
     }
 }
 
 /* Education section  */
-.edu-container{
+.edu-container {
     min-height: 50vh;
     width: 100vw;
     text-align: left;
     padding: 50px 70px;
     color: white;
 }
-.edu span{
+
+.edu span {
     display: flex;
 }
-.edu span h1{
+
+.edu span h1 {
     color: white;
 }
-.edu ul li{
+
+.edu ul li {
     display: flex;
     gap: 10px;
     padding: 10px;
     color: white;
 }
-.edu ul li img{
+
+.edu ul li img {
     height: 55px;
     width: 65px;
 }
-.edu ul li span{
+
+.edu ul li span {
     color: #abadab;
 }
-.edu ul li h4{
+
+.edu ul li h4 {
     color: white;
 }
-.edu ul li a{
+
+.edu ul li a {
     display: flex;
     flex-direction: column;
     color: white;
 }
-.nawa-nepal img{
+
+.nawa-nepal img {
     height: 55px;
     width: 55px;
     border-radius: 50%;
 }
+
 /* @media (max-width:500){
     .edu ul li img{
         height: 2vh;
@@ -374,18 +426,21 @@ a {
     padding: 90px 20px 90px 20px;
     background: #ecf0f1;
 }
+
 #projects h3 {
     font-size: 2rem;
     text-align: center;
     margin-bottom: 20px;
     color: #2c3e50;
 }
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     margin-top: 20px;
 }
+
 .project {
     background: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -394,132 +449,159 @@ a {
     text-align: center;
     transition: transform 0.3s ease;
 }
+
 .project:hover {
     transform: translateY(-10px);
 }
+
 .project h4 {
     font-size: 1.5rem;
     margin-bottom: 20px;
     color: #2c3e50;
 }
+
 .project p {
     font-size: 1rem;
     color: #7f8c8d;
 }
+
 /* projects  */
-.project img{
-    height:100%;
+.project img {
+    height: 100%;
     width: 100%;
     border-radius: 10px;
 }
-.project-btn{
+
+.project-btn {
     background-color: #000000;
     color: white;
-  border-radius: 4px;
+    border-radius: 4px;
     padding: 10px;
     transition: all 0.3s;
     margin-top: 4px;
 }
-.project-btn:hover{
+
+.project-btn:hover {
     box-shadow: 2px 2px 3px rgb(54, 53, 53);
     scale: 1.1;
 }
-.project a{
+
+.project a {
     color: white;
     font-weight: bold;
 }
+
 /* certificates */
-.certificates{
+.certificates {
     padding: 90px;
 }
-.certi-title span{
+
+.certi-title span {
     display: flex;
 }
+
 /* card */
 .cir-card {
     margin: 20px auto;
-  max-width: 730px;
-  height: 55vh;
-  border-radius: 10px;
-  background: url(about-back1.png);
-  background-size: cover;
-  display: flex;
-  gap: 0px;
-  padding: .2em;
-  flex-wrap: wrap;
+    max-width: 730px;
+    height: 55vh;
+    border-radius: 10px;
+    background: url(about-back1.png);
+    background-size: cover;
+    display: flex;
+    gap: 0px;
+    padding: .2em;
+    flex-wrap: wrap;
 }
 
 .cir-card p {
-  height: 100%;
-  flex: 1;
-  overflow: hidden;
-  cursor: pointer;
-  border-radius: 10px;
-  transition: all .5s;
-  background: #ecf0f1;
-  border: 2px solid rgb(0, 0, 0);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all .5s;
+    background: #ecf0f1;
+    border: 2px solid rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cir-card p:hover {
-  flex: 4;
+    flex: 4;
 }
 
 .cir-card p span {
-  min-width: 14em;
-  padding: .5em;
-  text-align: center;
-  transform: rotate(-90deg);
-  transition: all .5s;
-  text-transform: uppercase;
-  color: rgb(243, 156, 18);
-  letter-spacing: .1em;
+    min-width: 14em;
+    padding: .5em;
+    text-align: center;
+    transform: rotate(-90deg);
+    transition: all .5s;
+    text-transform: uppercase;
+    color: rgb(243, 156, 18);
+    letter-spacing: .1em;
 }
-.cir-card p button{
+
+.cir-card p button {
     display: none;
 }
-.cir-card p:hover button{
+
+.cir-card p:hover button {
     display: contents;
     font-weight: bold;
 }
 
-.cir-card p button a:hover{
+.cir-card p button a:hover {
     background-color: #000000;
     color: white;
-  border-radius: 4px;
+    border-radius: 4px;
     padding: 10px;
-    
+
 }
 
 .cir-card p:hover span {
-  transform: rotate(0);
+    transform: rotate(0);
 }
-@media (max-width: 950px) { /* Target screens smaller than 768px */
+
+@media (max-width: 950px) {
+
+    /* Target screens smaller than 768px */
     .cir-card {
-        flex-direction: column; /* Stack items vertically */
-        gap: 20px; /* Add spacing between rows */
-        padding: 5em; /* Adjust padding for better spacing */
+        flex-direction: column;
+        /* Stack items vertically */
+        gap: 20px;
+        /* Add spacing between rows */
+        padding: 5em;
+        /* Adjust padding for better spacing */
         height: auto;
         margin-right: 4em;
         margin: 20px auto;
     }
-    .certificates{
-        flex-direction: column; /* Stack items vertically */
-        gap: 0px; /* Add spacing between rows */
-        padding: 1em; /* Adjust padding for better spacing */
+
+    .certificates {
+        flex-direction: column;
+        /* Stack items vertically */
+        gap: 0px;
+        /* Add spacing between rows */
+        padding: 1em;
+        /* Adjust padding for better spacing */
         height: auto;
     }
 }
-@media (max-width: 610px) { 
+
+@media (max-width: 610px) {
     .cir-card {
-        flex-direction: column; /* Stack items vertically */
-        gap: 20px; /* Add spacing between rows */
-        padding: 1em; /* Adjust padding for better spacing */
+        flex-direction: column;
+        /* Stack items vertically */
+        gap: 20px;
+        /* Add spacing between rows */
+        padding: 1em;
+        /* Adjust padding for better spacing */
         height: auto;
     }
-    .cir-card p span{
+
+    .cir-card p span {
         min-width: auto;
         font-size: smaller;
     }
@@ -534,15 +616,17 @@ a {
     text-align: center;
     background: #ecf0f1;
     background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+    background-size: cover;
+    background-attachment: fixed;
     background-position: left;
     position: relative;
 }
+
 #contact h3 {
     font-size: 2rem;
     margin-bottom: 20px;
 }
+
 #contact form {
     max-width: 420px;
     margin: 0 auto;
@@ -550,6 +634,7 @@ a {
     flex-direction: column;
     gap: 15px;
 }
+
 #contact input,
 #contact textarea {
     padding: 15px;
@@ -559,10 +644,12 @@ a {
     background: none;
     border-bottom: 1px solid black;
 }
-#contact input::placeholder{
+
+#contact input::placeholder {
     font-weight: bold;
     color: black;
 }
+
 #contact textarea {
     resize: none;
     height: 150px;
@@ -570,10 +657,12 @@ a {
     border: 2px solid black;
     background-color: #ffffff7a;
 }
-#contact textarea::placeholder{
+
+#contact textarea::placeholder {
     font-weight: bold;
     color: black;
 }
+
 #contact button {
     background: #f39c12;
     color: #fff;
@@ -585,6 +674,7 @@ a {
     cursor: pointer;
     transition: background 0.3s ease;
 }
+
 #contact button:hover {
     background: #d35400;
 }
@@ -598,14 +688,15 @@ footer {
     font-size: 0.9rem;
     margin-top: 4px;
 }
-footer p{
+
+footer p {
     color: white;
 }
 
 /* up arrow  */
-.fa-arrow-up{
-position: fixed;
-color: #ffffff;
+.fa-arrow-up {
+    position: fixed;
+    color: #ffffff;
     bottom: 20px;
     right: 20px;
     z-index: 100;
@@ -613,28 +704,44 @@ color: #ffffff;
 
 
 /* css ko part  */
- .span-walla {
+.span-walla {
     color: #fff;
     font-family: monospace;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(30, end),
-      blink-caret .5s step-end infinite;
-  }
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange }
-  }
-  
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation:
+        typing 3.5s steps(30, end),
+        blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange
+    }
+}
