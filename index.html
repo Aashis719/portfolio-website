@@ -3,171 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aashish Neupane </title>
+    <title>Aashish Neupane</title>
+    <link rel="icon" href="person.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 </head>
 <body>
-    <header id="nav">
-        <div class="container1">
-            <span class="logo-walla"><a href="#hero"> <img src="bg.png" width="90px" alt=""></a></span>
-           
-            <nav>
-                <ul class="sidebar">
-                    <li onclick="hideSidebar()"><a ><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#Certification">Certifications</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    
-                </ul> 
-                <ul>
-                    <li><a href="#hero" class="hideOnMobile">Home</a></li>
-                    <li><a href="#about" class="hideOnMobile">About</a></li>
-                    <li><a href="#skills" class="hideOnMobile">Skills</a></li>
-                    <li><a href="#projects" class="hideOnMobile">Projects</a></li>
-                    <!-- <li><a href="#Certification" class="kagaz">Certifications</a></li> -->
-                    <li><a href="#contact" class="hideOnMobile">Contact</a></li>
-                    <li  onclick="showSidebar()" ><a class="menu-button" ><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-                </ul>
-            </nav>
+    <header id="head" class="head">
+        <div class="theme-switcher">
+            <div class="theme-dot black" data-color="black" title="Black Theme"></div>
+            <div class="theme-dot green" data-color="green" title="green Theme"></div>
+            <div class="theme-dot white" data-color="white" title="White Theme"></div>
+
+        </div>
+        <img src="haam.webp" alt="Profile Picture" id="headimg">
+        <h1>Hi,I'm Aashis<span class="wave">👋</span></h1>
+        <p id="des" class="des">Building digital <span class="highlight">products</span>, brands, and experiences.</p>
+        <nav id="nav" class="navkoClass">
+            <a href="#about" class="nav">About</a>
+            <a href="#projects" class="nav">Projects</a>
+            <a href="#contact" class="nav">Contact</a>
+        </nav>
+        <div class="social-links top-social-links">
+            <a href="https://www.linkedin.com/in/aashis-neupane-1a8050327/" target="_blank"><i class="fa-brands fa-linkedin fa-xl" style="color: #ffffff"></i></a>
+            <a href="https://github.com/Aashis719" target="_blank"><i class="fa-brands fa-github fa-xl" style="color: #ffffff"></i></a>
+            <a href="https://www.upwork.com/freelancers/~01ec5e6fdf755e9baf?mp_source=share" target="_blank"><i class="fa-brands fa-upwork fa-xl" style="color: #ffffff"></i></a>
+            <a href="https://www.instagram.com/aashis_neupane/" target="_blank"><i class="fa-brands fa-instagram fa-xl" style="color: #ffffff"></i></a>
         </div>
     </header>
-<!-- hero section  -->
-    <section id="hero">
-        <div class="open-container"></div>
-    <div class="container">
-            <h2>Hello,<br> I'm <span class="span-walla">Aashish Neupane</span>
-            </h2>
-            <p>Web Developer | Problem Solver | Innovator</p>
-            <a href="#projects" class="btn">View My Work</a>
+
+    <section class="brands boxhok">
+     <span ><img src="css.png" alt="Brand 1" title="CSS"  > <div class="progress-container"><div class="progress-bar" id="bar1"></div><div class="percentage" id="text1">0%</div></div> Proficient
+    </span>   
+
+       <span><img src="jswalla.webp" alt="Brand 2" title="JavaScript" ><div class="progress-container"><div class="progress-bar" id="bar3"></div><div class="percentage" id="text3">0%</div></div>Advanced</span> 
+
+       <span><img src="react.png" alt="Brand 3" title="React js">  <div class="progress-container"><div class="progress-bar" id="bar2"></div><div class="percentage" id="text2">0%</div></div>Intermediate</span> 
+
+       <span><img src="logonext.svg" alt="Brand 4" title="Node js"> <div class="progress-container"><div class="progress-bar" id="bar5"></div><div class="percentage" id="text5">0%</div></div>Learner</span>  
+       
+
+       <span class="BootstrapWalla"><img src="bootstrap.svg" alt="Brand 5" title="Bootstrap"><div class="progress-container"><div class="progress-bar" id="bar4"></div><div class="percentage" id="text4">0%</div></div>Newbie</span> 
+    </section>
+
+    <section id="about" class="about boxhok">
+        <div class="content">
+            <h2>About Me</h2>
+            <p>Hi, I'm Aashis, a passionate <span class="highlight">web developer</span> specializing in front-end technologies like HTML, CSS, JavaScript, React, and Next.js. I focus on creating responsive, user-friendly websites that deliver seamless and dynamic experiences</p>
+            <p>I focus on building fast, functional, and visually appealing websites. Always learning and excited to collaborate on innovative projects.</p>
         </div>
-    <div class="social_media">
-        <div class="media">
-            <div class="social"><a href="https://www.facebook.com/aashish.neupane.9216" target="_blank"><i class="fa-brands fa-facebook fa-xl" style="color: #ffffff"></i></a></div>
-
-            <div class="social"><a href="https://www.instagram.com/aashis_neupane/" target="_blank"><i class="fa-brands fa-instagram fa-xl" style="color: #ffffff"></i></a></div>
-
-            <div class="social"><a href="https://www.linkedin.com/in/aashis-neupane-1a8050327/" target="_blank"><i class="fa-brands fa-linkedin fa-xl" style="color: #ffffff"></i></a></div>
-
-            <div class="social"><a href="https://github.com/Aashis719" target="_blank"><i class="fa-brands fa-github fa-xl" style="color: #ffffff"></i></a></div>
+        <div class="image-container">
+            <img src="hum.jpg" alt="Aashis's Image" style="background-size: cover; background-position: center;">
         </div>
+    </section>
+
+    <!-- Education section  -->
+    <section id="education" >
+        <h2 class="section-title">Education</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3 class="edu-institute"><a href="https://samriddhicollege.edu.np/" target="_blank">Samriddhi College</a></h3>
+                <span class="edu-duration">2023 - Present</span>
+                <p class="edu-degree">Bachelor's in Computer Science</p>
+            </div>
+    
+            <div class="timeline-item">
+                <h3 class="edu-institute"><a href="https://www.facebook.com/janajyotihigher.secondaryschool" target="_blank">Jana Jyoti S.School</a></h3>
+                <span class="edu-duration">2016 - 2023</span>
+                <p class="edu-degree">Secondary level</p>
+            </div>
+    
+            <div class="timeline-item">
+                <h3 class="edu-institute"><a href="https://www.facebook.com/snnpbs.devchuli.3" target="_blank">Nawa Nepal P.School</a></h3>
+                <span class="edu-duration">2008 - 2015</span>
+                <p class="edu-degree">School Level</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Services section -->
+    <section class="services">
+        <h2>Digital <span class="highlight">Services</span> </h2>
+        <div class="services-container">
+            <div class="service-card boxhok">
+                <h3>UX & UI</h3>
+                <p>Designing interfaces that are intuitive, efficient, and enjoyable to use.</p>
+            </div>
+            <div class="service-card boxhok">
+                <h3>Web Apps</h3>
+                <p>Transforming ideas into exceptional web and mobile experiences.</p>
+            </div>
+            <div class="service-card boxhok">
+                <h3>Design & Creative</h3>
+                <p>Crafting visually stunning designs that connect with your audience.</p>
+            </div>
+            <!-- <div class="service-card">
+                <h3>Development</h3>
+                <p>Bringing your vision to life with the latest technology and design trends.</p>
+            </div> -->
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2> <span class="highlight">Projects</span></h2>
+        <div class="project-container">
+        <div class="project-card boxhok">
+            <h3>Restaurant Website</h3>
+            <img src="restro.png" alt="" width="100%">
+            <p>1st Sem Team Project</p>
+            <button class="project-btn"><a href="https://aashis719.github.io/OG-Restaurant/" target="_blank">Live Demo</a></button>
+        </div>
+        <div class="project-card boxhok">
+            <!-- <h3>E-commerce Site</h3> -->
+             <h3>P.U.C.</h3>
+            <img src="const.png" alt="" width="100%" height="170px">
+            <!-- <p>An online platform for buying and selling products. adding to the card is also it's feature</p> -->
+        </div>
+        <!-- <div class="project-card">
+            <h3>Blog Platform</h3>
+            <p>A platform for writing and sharing blog posts related to different topics. mostly the trending ones related to IT sector</p>
+        </div> -->
     </div>
     </section>
 
-<!-- About section  -->
-    <section id="about">
-<div class="card">
-            <div class="card-inner">
-              <img src="philip.png" width="250px" alt="">
-            </div>
-          </div>
-        <div class="container">
-            <h3>About Me</h3>
-            <p>I am a passionate web developer skilled in building dynamic and responsive websites. I love turning ideas into reality with clean code and modern designs.</p>
+    <section id="contact" class="contact ">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/aashis-neupane-1a8050327/" target="_blank"><i class="fa-brands fa-linkedin fa-xl" style="color: #ffffff"></i></a>
+            <a href="https://github.com/Aashis719" target="_blank"><i class="fa-brands fa-github fa-xl" style="color: #ffffff"></i></a>
+            <a href="https://www.instagram.com/aashis_neupane/" target="_blank"><i class="fa-brands fa-instagram fa-xl" style="color: #ffffff"></i></a>
         </div>
-        
     </section>
+    
+    <!-- up arrow button  -->
+    <div class="scroll-progress"></div>
+<a href="#head" class="up-arrow" title="Back to top">&#8593;</a>
 
-    <section id="skills">
-        <div class="container, skill-container">
-            <h3>Skills</h3>
-            <div class="skills-grid">
-                <div class="skill">HTML</div>
-                <div class="skill">CSS</div>
-                <div class="skill">JavaScript</div>
-                <div class="skill">React</div>
-                <div class="skill">Bootstrap</div>
-                <div class="skill">Git</div>
-            </div>
-        </div>
-        <div class="edu-container">
-            <div class="edu">
-               <span><h1 style="color:#f39c12">|</h1><h1> Education</h1></span> 
-                <ul>
-                    <li>
-                        <img src="Samriddhi-college.jpg" width="70px" alt="">
-                        <a href="https://samriddhicollege.edu.np/" target="_blank"> <h4>Samriddhi College</h4> <span>Bachelor in Computer Application(BCA) </span>
-                        <span>2023-Present</span>
-                        </a>
-                    </li>
-                    <li>
-                        <img src="jana-jyoti.png" width="70px" alt="">
-                        <a href="https://www.facebook.com/janajyotihigher.secondaryschool" target="_blank"> <h4>Jana Jyoti Secondary School</h4> <span>+2 level</span>
-                        <span>2021-2023</span>
-                        </a>
-                    </li>
-                    <li class="nawa-nepal">
-                        <img src="nawa nepal.jpg" width="70px" alt="">
-                        <a href="https://www.facebook.com/snnpbs.devchuli.3" target="_blank"> <h4>Nawa Nepal Primary School</h4> <span>School level</span>
-                        <span></span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <!-- project section  -->
-    <section id="projects">
-        <div class="container">
-            <h3>Projects</h3>
-            <div class="projects-grid">
-                <div class="project">
-                    <img src="restro.png" alt="">
-                    <h4>Restaurant Website</h4>
-                    <p>1st Sem Team Project</p>
-                    <button class="project-btn"><a href="https://aashis719.github.io/OG-Restaurant/" target="_blank">Live Demo</a></button>
-                </div>
-                <div class="project">
-                    <h4>Project 2</h4>
-                    <p>-------TBD-------</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- certificates -->
-     <section id="Certification">
-     <div class="certificates" >
-        <div class="certi-title">
-            <span><h1 style="color:#f39c12">|</h1><h1> Certifications</h1></span>
-        </div>
-        <div class="cir-card">
-            <p><span>
-                <img src="cisco-certificate.png" width="100%" height="100%" alt="">
-                <button class="btn"><a href="https://www.credly.com/badges/cb0e9f4e-f819-4bd7-958b-919d891fdf70/public_url
-                    " target="_blank">Show Credintials</a></button>
-            </span></p>
-
-            <p><span> <img src="hackathon-certificate.jpg" width="95%" height="90%" alt="">
-                <button class="btn"><a href="https://www.credly.com/badges/cb0e9f4e-f819-4bd7-958b-919d891fdf70/public_url
-                    " target="_blank">Show Credintials</a></button></span></p>
-
-            <p><span> <img src="redhat-certificate.png" width="95%" height="90%" alt="">
-                <button class="btn"><a href="https://www.credly.com/badges/3d1acef8-3840-4dbe-a431-5a5aec7e2d7e/public_url
-                    " target="_blank">Show Credintials</a></button></span></p>
-        </div>
-     </div>
-    </section>
-    <section id="contact">
-        <div class="container,contact-container">
-            <h3>Contact Me</h3>
-            <form id="contactForm">
-                <input type="text" id="name" placeholder="Your Name" required>
-                <input type="email" id="email" placeholder="Your Email" required>
-                <textarea id="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-    </section>
 
     <footer>
-        <p>&copy; 2024 Aashish Neupane. All Rights Reserved.</p> 
-        <a href=""><i class="fa fa-arrow-up fa-xl" style="color: #dcdada"></i></a>
+        &copy; 2025 Aashis. All rights reserved.
     </footer>
-   
+
+
+
+   <script src="app.js"></script>
 </body>
 </html>
