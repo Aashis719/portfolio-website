@@ -96,7 +96,7 @@
                       document.body.style.backgroundColor = '#fff';
                       document.body.style.color = '#000';
                       des.style.color='#964B00';
-                      headimg.style.border="yellow";
+                     
                       Array.from(navwalla).forEach(navwalla => navwalla.style.color = '#964B00');
                       educationWalla.style.backgroundColor='#1e1e2f'
                       Array.from(socialWalla).forEach(socialWalla => {
