@@ -99,16 +99,16 @@ display: grid;
 grid-template-columns: repeat(5, 1fr);  /* 3 columns by default */
 
 padding: 40px 0px;
-background-color: #1a1a1a;
+background-color: #333;
 justify-items: center;  /* Centers the content inside each grid item */
 }
 .brands span{
 width: 90px;
-color: rgb(150, 75, 0);
+color: #ffa600;
 font-weight: bold;
 }
 
-.brands img { width: 70px; filter: brightness(0.8); transition: filter 0.3s, transform 0.3s;  cursor: help;}
+.brands img { width: 75px; height:70px; filter: brightness(0.8); transition: filter 0.3s, transform 0.3s;  cursor: help;}
 .brands img:hover { filter: brightness(1); transform: scale(1.1); }
 
 /* mobile view brands  */
@@ -423,14 +423,25 @@ font-size: 1rem;
 .services, .projects, .contact { text-align: center; padding: 50px 20px; }
 .services h2, .projects h2, .contact h2 { font-size: 2rem; margin-bottom: 20px; }
 .services-container { display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; }
-.service-card, .project-card { background-color: #1a1a1a; padding: 20px; width: 320px; border-radius: 8px; text-align: center; transition: transform 0.3s; }
+.service-card, .project-card { background-color: #333; padding: 20px; width: 320px; border-radius: 8px; text-align: center; transition: transform 0.3s; }
 .project-card{
     width: 370px;
 }
-.service-card:hover, .project-card:hover { transform: translateY(-10px); }
+.service-card:hover, .project-card:hover { transform: translateY(-10px); box-shadow: 0px 1px 5px 1px rgb(255 231 0); }
 .service-card h3, .project-card h3 { color: #fff; margin-bottom: 10px; }
-.service-card p, .project-card p { color: #bbb; font-size: 0.9rem; }
+.service-card p, .project-card p { color: #e4e4e4; font-size: 0.9rem; }
 
+.service-card{
+    text-align: left;
+    background-color: #333;
+    border-left: 2px solid #333;
+}
+.service-card h3{
+    color: #ffb300;
+}
+.service-card:hover{
+    border-left: 2px solid yellow;
+}
 .project-container{
     display: flex;
     justify-content: center;
@@ -595,6 +606,9 @@ right: 15px;  /* Adjust position for smaller screen */
     line-height: 15px;
 }
 
+.BootstrapWalla{
+   align-items: baseline;
+}
 
 @media (max-width:768px){
     .BootstrapWalla{
@@ -611,3 +625,39 @@ right: 15px;  /* Adjust position for smaller screen */
         display: none;
     }
 }
+.contact-section {
+    background-color: #000;
+    color: #ffb300;
+    text-align: center;
+    padding: 80px 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .contact-section p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: white;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top:30px;
+  }
+  
+ 
+  .fa-brands1:hover {
+    scale: 1.1;
+    filter: drop-shadow(2px 1px 3px #ffffff);
+  }
+  
+  

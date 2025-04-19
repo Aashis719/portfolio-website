@@ -24,7 +24,7 @@
   
   
   // progress bar animation
-  const targets = [75, 60, 55, 40, 50]; // Target percentages for each bar
+  const targets = [75, 70, 60, 65, 50]; // Target percentages for each bar
           const bars = ['bar1', 'bar2', 'bar3', 'bar4', 'bar5'];
           const texts = ['text1', 'text2', 'text3', 'text4', 'text5'];
   
