@@ -120,6 +120,7 @@ gap: 30px;
 
 .brands img {
 width: 60px;  /* Slightly reduce image size */
+height: 60px;
 }
 }
 
@@ -132,6 +133,7 @@ gap: 40px;
 
 .brands img {
 width: 50px;  /* Further reduce image size */
+height: 50px;
 }
 }
 /* about me section  */
