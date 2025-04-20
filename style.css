@@ -450,14 +450,16 @@ font-size: 1rem;
     gap: 70px;
     flex-wrap: wrap;
     font-family: 'Poppins', sans-serif;
-
-
+    margin-top: 60px;
+}
+.projects{
+    padding: 50px 20px 200px 20px;
 }
 .project-card img{
     border-radius: 10px;
 }
 .project-btn {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(20, 20, 20);
     color: white;
     margin-top: 20px;
     border-radius: 4px;
@@ -510,7 +512,15 @@ margin-top: 210px;
 
 @media (max-width:1000px){.contact { width: 90%; padding: 20px; }}
 footer { text-align: center; padding: 15px; background-color: #1a1a1a; color: #bbb; }
-@media (max-width: 600px) { .services-container, .brands { flex-direction: column; align-items: center; }  }
+@media (max-width: 600px) { 
+    .services-container, .brands { flex-direction: column; align-items: center; }
+    .projects{
+        padding: 50px 20px 100px 20px;
+    }
+    .project-card{
+        margin-top: 5px;
+    }
+}
 
 /* Theme Switcher */
 .theme-switcher { position: absolute; top: 20px; right: 20px; display: flex; gap: 10px; }
@@ -628,7 +638,7 @@ right: 15px;  /* Adjust position for smaller screen */
     }
 }
 .contact-section {
-    background-color: #000;
+    background-color: #333;
     color: #ffb300;
     text-align: center;
     padding: 80px 10px;
