@@ -3,142 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aashish Neupane</title>
     <link rel="icon" href="person.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/@tabler/icons@latest/iconfont/tabler-icons.min.css" rel="stylesheet">
+
 </head>
 <body>
     <header id="head" class="head">
-        <div class="theme-switcher">
+        <nav id="nav" class="nav-class">
+            <ul class="nav-content">
+              <li><a href="#">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#works">Works</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          
+        <!-- <div class="theme-switcher">
             <div class="theme-dot black" data-color="black" title="Black Theme"></div>
             <div class="theme-dot green" data-color="green" title="green Theme"></div>
             <div class="theme-dot white" data-color="white" title="White Theme"></div>
-        </div>
-        <img src="haam.webp" alt="Profile Picture" id="headimg">
-        <h1>Hi,I'm Aashis<span class="wave">👋</span></h1>
-        <p id="des" class="des">Building digital <span class="highlight">products</span>, brands, and experiences.</p>
-        <nav id="nav" class="navkoClass">
-            <a href="#about" class="nav">About</a>
-            <a href="#projects" class="nav">Projects</a>
-            <a href="#contact" class="nav">Contact</a>
-        </nav>
-        <div class="social-links top-social-links">
-            <a href="https://www.linkedin.com/in/aashis-neupane-1a8050327/" target="_blank"><i class="fa-brands fa-linkedin fa-xl" style="color: #ffffff"></i></a>
-            <a href="https://github.com/Aashis719" target="_blank"><i class="fa-brands fa-github fa-xl" style="color: #ffffff"></i></a>
-            <a href="https://x.com/Aashis_19" target="_blank"><i class="fa-brands fab fa-x-twitter fa-xl" style="color: #ffffff"></i></a>
-            <a href="https://www.instagram.com/aashis_neupane/" target="_blank"><i class="fa-brands fa-instagram fa-xl" style="color: #ffffff"></i></a>
-        </div>
-    </header>
-
-    <section class="brands boxhok">
-     <span ><img src="css.png" alt="Brand 1" title="CSS"  > <div class="progress-container"><div class="progress-bar" id="bar1"></div><div class="percentage" id="text1">0%</div></div> Proficient
-    </span>   
-
-       <span><img src="jswalla.webp" alt="Brand 2" title="JavaScript" ><div class="progress-container"><div class="progress-bar" id="bar3"></div><div class="percentage" id="text3">0%</div></div>Advanced</span> 
-
-       <span><img src="react.png" alt="Brand 3" title="React js">  <div class="progress-container"><div class="progress-bar" id="bar2"></div><div class="percentage" id="text2">0%</div></div>Intermediate</span> 
-
-       <span><img src="tailwind.svg" alt="Brand 5" title="Tailwind CSS"> <div class="progress-container"><div class="progress-bar" id="bar4"></div><div class="percentage" id="text4">0%</div></div>Competent</span>  
-
-       <span><img src="logonext.svg" alt="Brand 4" title="Next js"> <div class="progress-container"><div class="progress-bar" id="bar5"></div><div class="percentage" id="text5">0%</div></div>Learner</span> 
-       
-
-       <!-- <span ><img src="tailwind.png" alt="Brand 5" title="Tailwind"><div class="progress-container"><div class="progress-bar" id="bar4"></div><div class="percentage" id="text4">0%</div></div>Newbie</span>  -->
-    </section>
-
-    <section id="about" class="about boxhok">
-        <div class="content">
-            <h2>About Me</h2>
-            <p>Hi, I'm Aashis, a passionate <span class="highlight">web developer</span> specializing in front-end technologies like HTML, CSS, JavaScript, React, and Next.js. I focus on creating responsive, user-friendly websites that deliver seamless and dynamic experiences</p>
-            <p>I focus on building fast, functional, and visually appealing websites. Always learning and excited to collaborate on innovative projects.</p>
-        </div>
-        <div class="image-container">
-            <img src="hum.jpg" alt="Aashis's Image" style="background-size: cover; background-position: center;">
-        </div>
-    </section>
-
-    <!-- Education section  -->
-    <section id="education" >
-        <h2 class="section-title">Education</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <h3 class="edu-institute"><a href="https://samriddhicollege.edu.np/" target="_blank">Samriddhi College</a></h3>
-                <span class="edu-duration">2023 - Present</span>
-                <p class="edu-degree">Bachelor's in Computer Science</p>
-            </div>
-    
-            <div class="timeline-item">
-                <h3 class="edu-institute"><a href="https://www.facebook.com/janajyotihigher.secondaryschool" target="_blank">Jana Jyoti S.School</a></h3>
-                <span class="edu-duration">2016 - 2023</span>
-                <p class="edu-degree">Secondary level</p>
-            </div>
-    
-            <div class="timeline-item">
-                <h3 class="edu-institute"><a href="https://www.facebook.com/snnpbs.devchuli.3" target="_blank">Nawa Nepal P.School</a></h3>
-                <span class="edu-duration">2008 - 2015</span>
-                <p class="edu-degree">School Level</p>
-            </div>
-        </div>
-    </section>
-    
-    
-    <!-- Services section -->
-    <section class="services">
-        <h2>Digital <span class="highlight">Services</span> </h2>
-        <div class="services-container">
-            <div class="service-card boxhok">
-                <h3>UX & UI</h3>
-                <p>Designing interfaces that are intuitive, efficient, and enjoyable to use.</p>
-            </div>
-            <div class="service-card boxhok">
-                <h3>Web Apps</h3>
-                <p>Transforming ideas into exceptional web and mobile experiences.</p>
-            </div>
-            <div class="service-card boxhok">
-                <h3>Design & Creative</h3>
-                <p>Crafting visually stunning designs that connect with your audience.</p>
-            </div>
-            <!-- <div class="service-card">
-                <h3>Development</h3>
-                <p>Bringing your vision to life with the latest technology and design trends.</p>
-            </div> -->
-        </div>
-    </section>
-
-    <section id="projects" class="projects">
-        <h2> Portfoilo <span class="highlight">Projects</span></h2>
-        <div class="project-container">
-        <div class="project-card boxhok">
-            <h3>Laitora - Ecommerce</h3>
-            <img src="laitora.png" alt="" width="100%">
-            <p>Online Product Management System</p>
-            <button class="project-btn"><a href="https://laitora-store.vercel.app/" target="_blank">Live Demo</a></button>
-        </div>
-        <div class="project-card boxhok">
-            <!-- <h3>E-commerce Site</h3> -->
-             <h3>Tours and Travel Website</h3>
-            <img src="locus-tours-travel.png" alt="" width="100%" height="170px">
-            <p> User-friendly travel platform built with Next.js</p>
-            <button class="project-btn"><a href="https://locus-tours-and-travel.vercel.app/" target="_blank">Live Demo</a></button>
-
-        </div>
-        <div class="project-card boxhok">
-            <!-- <h3>E-commerce Site</h3> -->
-             <h3>FlowSync - SaaS Product</h3>
-            <img src="flowsync.png" alt="" width="100%" height="170px">
-            <p> Landing Page with Emailing Feature</p>
-            <button class="project-btn"><a href="https://flowsync-ashen.vercel.app/" target="_blank">Live Demo</a></button>
-
-        </div>
-        <!-- <div class="project-card">
-            <h3>Blog Platform</h3>
-            <p>A platform for writing and sharing blog posts related to different topics. mostly the trending ones related to IT sector</p>
         </div> -->
-    </div>
+        
+        
+        <div class="hero-div">
+            <div class="pp-walla">
+                <div class="hero-pp-text">
+                <h3 >Hello,I'm </h3>
+                <h1 > Aashis </h1>
+                <p>Web Dev|Design  </p>
+                <p class="head-description">I specialize in creating both front-end and full-stack websites, focused on delivering seamless web experiences that strengthen your online presence.</p>
+                 <!-- <p>I build front-end and full-stack websites that deliver smooth experiences and boost your online presence.</p> -->
+                <div>
+                    <div class="button-group">
+                        <a href="#works" class="btn primary-btn">View My Works</a>
+                       
+                        <a href="#contact" class=" btn slide-bg-btn" id="hover-target">Contact Me</a>
+                      </div>
+
+                </div>
+                      
+            </div>
+
+                <div class="img-div">
+                    <div class="img-walla"><img src="ham.png" alt="Profile Picture" id="headimg"></div>
+                    <p class="img-msg" id="hover-hidden">let's go</p>
+                </div>
+               
+            </div>
+           
+
+     
+        </div>
+       
+        
+    </header>
+    <div class="bottom-nav">
+        <a href="#services">Services</a>
+        <a href="#works">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        </div>
+    <section class="services" id="services">
+        <div class="container">
+          <h2 class="section-title"><span>|</span>Services</h2>
+          <p class="service-description">I build services that deliver fast, user-friendly websites and interfaces, <br> directly enhancing user experiences.</p>
+          <div class="services-grid">
+            <!-- Web Development -->
+            <div class="service-card">
+              <div class="icon"><img src="webb.png" width="40px" alt="">              </div>
+              <h3>Web Development</h3>
+              <p>I build fast, responsive websites using Next.js & Tailwind CSS — optimized for SEO to help you reach a wider audience.</p>
+            </div>
+            <!-- UI/UX Design -->
+            <div class="service-card">
+              <div class="icon"><img src="ui.png" width="40px" alt=""></div>
+              <h3>UI/UX Design</h3>
+              <p>From Figma to code or design from scratch — I deliver clean, accessible, and user-centered interfaces.</p>
+            </div>
+            <!-- Site Optimization -->
+            <div class="service-card">
+              <div class="icon"><img src="opt.png" width="40px" alt=""></div>
+              <h3>Site Optimization</h3>
+              <p>I improve Core Web Vitals, reduce load times, and ensure your site runs smoothly with ongoing support.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="works" class="works-section">
+        <h2>|Projects</h2>
+        <div class="works-grid">
+            <div class="work-item" data-modal="modal-tours">
+                <img src="locus-tours-travel.png" alt="Tours and Travel Landing Page">
+                <div class="work-overlay">
+                    <h3>Locus Tours and Travel</h3>
+                    <p>Travel Website</p>
+                </div>
+            </div>
+    
+            <div class="work-item" data-modal="modal-saas">
+                <img src="flowsync.png" alt="SaaS Product Landing Page">
+                <div class="work-overlay">
+                    <h3>SaaS Product : FlowSync</h3>
+                    <p>Landing Page</p>
+                </div>
+            </div>
+    
+            <div class="work-item" data-modal="modal-ecommerce">
+                <img src="laitora.png" alt="E-commerce System">
+                <div class="work-overlay">
+                    <h3> Online Marketplace : Laitora</h3>
+                    <p>E-commerce System</p>
+                </div>
+            </div>
+        </div>
+    
+        <div id="modal-tours" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <img src="locus-tours-travel.png" alt="Tours and Travel Landing Page Full">
+                <h3>Locus Tours and Travel</h3>
+                <p>Locus Tours and Travel is a responsive landing page with smooth navigation, Tailwind styling, and email inquiry support.</p>
+                <a href="https://locus-tours-travel.vercel.app/" class="button live-link" target="_blank" rel="noopener noreferrer">Live Demo</a>
+            </div>
+        </div>
+    
+        <div id="modal-saas" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <img src="flowsync.png" alt="SaaS Product Landing Page Full">
+                <h3>FlowSync : SaaS Product</h3>
+                <p>FlowSync Landing Page for a AI-powered automation platform built with React and Tailwind CSS, featuring a sleek, responsive UI.</p>
+                <a href="https://flowsync-ashen.vercel.app/" class="button live-link" target="_blank" rel="noopener noreferrer">Live Demo</a>
+            </div>
+        </div>
+    
+        <div id="modal-ecommerce" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <img src="laitora.png" alt="E-commerce System Full">
+                <h3>Laitora: Complete Online Marketplace</h3>
+                <p>Laitora is a multi-vendor e-commerce platform for seamless shopping and shop management.</p>
+                <a href="https://laitora-store.vercel.app/" class="button live-link" target="_blank" rel="noopener noreferrer">Live Demo</a>
+            </div>
+        </div>
     </section>
+
+    <section id="about" class="portfolio-about-section">
+        <div class="portfolio-container">
+            <div class="portfolio-about-content">
+                <div class="portfolio-about-text-wrapper">
+                    <h2 class="portfolio-about-title">|About Me</h2>
+                    <p class="portfolio-about-paragraph">Hi, I'm Aashis, a web developer passionate about building fast, accessible, and user-friendly websites.</p>
+                    <p class="portfolio-about-paragraph">My core focus revolves around crafting responsive and user-friendly experiences, leveraging tools like Next.js and Tailwind CSS to deliver exceptional output. I'm always learning and eager to collaborate on innovative projects.</p>
+                </div>
+                <div class="portfolio-about-highlight">
+                    <p class="highlight-text">Design. Develop. <span class="accent-text">Deliver..</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+  
 
     <section class="contact-section " id="contact">
         <h2>Contact Me</h2>

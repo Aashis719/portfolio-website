@@ -1,53 +1,51 @@
-  // sticky nav bar
-  const navbar = document.getElementById("nav");
+const navbar = document.getElementById("nav");
 
-  // Get the navbar's initial position
-  const navOffset = navbar.offsetTop;
-  
-  window.addEventListener("scroll", () => {
-      // Check when scroll reaches navbar's position
-      if (window.scrollY >= navOffset) {
-          navbar.classList.add("sticky");
-          if (document.body.classList.contains("theme-green")) {
-            navbar.style.backgroundColor = "rgb(247, 231, 206)"; // Green theme navbar color
-        } else if (document.body.classList.contains("theme-white")) {
-            navbar.style.backgroundColor = "white"; // Black theme navbar color
-        } else {
-            navbar.style.backgroundColor = "black"; // Default sticky navbar color
-        }
-          
-      } else {
-          navbar.classList.remove("sticky");
-          navbar.style.backgroundColor = "";
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY >= 10) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  const workItems = document.querySelectorAll('.work-item');
+  const modals = {
+      'modal-tours': document.getElementById('modal-tours'),
+      'modal-saas': document.getElementById('modal-saas'),
+      'modal-ecommerce': document.getElementById('modal-ecommerce')
+  };
+  const closeButtons = document.querySelectorAll('.close-button');
+
+  workItems.forEach(item => {
+      item.addEventListener('click', function() {
+          const modalId = this.dataset.modal;
+          if (modals[modalId]) {
+              modals[modalId].style.display = 'block';
+          }
+      });
+  });
+
+  closeButtons.forEach(button => {
+      button.addEventListener('click', function() {
+          const modal = this.closest('.modal');
+          if (modal) {
+              modal.style.display = 'none';
+          }
+      });
+  });
+
+ 
+  window.addEventListener('click', function(event) {
+      for (const modalId in modals) {
+          if (modals[modalId] === event.target) {
+              modals[modalId].style.display = 'none';
+          }
       }
   });
-  
-  
-  // progress bar animation
-  const targets = [75, 70, 60, 65, 50]; // Target percentages for each bar
-          const bars = ['bar1', 'bar2', 'bar3', 'bar4', 'bar5'];
-          const texts = ['text1', 'text2', 'text3', 'text4', 'text5'];
-  
-          // Function to animate each progress bar independently
-          function animateProgressBar(barId, textId, targetPercentage) {
-              let currentPercentage = 0;
-              const progressBar = document.getElementById(barId);
-              const percentageText = document.getElementById(textId);
-  
-              function animate() {
-                  if (currentPercentage < targetPercentage) {
-                      currentPercentage++;
-                      progressBar.style.width = currentPercentage + "%";
-                      percentageText.textContent = currentPercentage + "%";
-                      setTimeout(animate, 10);
-                  }
-              }
-  
-              animate(); // Start animation immediately
-          }
-  
-          // Trigger animation for all bars at once
-          bars.forEach((bar, i) => animateProgressBar(bar, texts[i], targets[i]));
+});
+
   
   
           // Theme switcher
@@ -65,7 +63,7 @@
 
 
                   Array.from(boxhokElements).forEach(boxhok => {
-                    boxhok.style.backgroundColor = ''; // Reset to default (or you can set it to a base color)
+                    boxhok.style.backgroundColor = ''; 
                     boxhok.querySelectorAll('p').forEach(p => p.style.setProperty('color', '', 'important'));
                     boxhok.querySelectorAll('h2').forEach(h2 => h2.style.setProperty('color', '', 'important'));
                     boxhok.querySelectorAll('h3').forEach(h3 => h3.style.setProperty('color', '', 'important'));
