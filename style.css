@@ -309,7 +309,7 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 .modal-content {
     position: relative;
     background-color: #222; /* Dark background for content */
-    margin:200px auto; /* Adjust top margin for better initial placement */
+    margin:4% auto; /* Adjust top margin for better initial placement */
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Default width - adjust as needed */
@@ -389,7 +389,7 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 @media (max-width: 600px) {
     .modal-content {
         width: 95%;
-        margin: 30% auto; /* Adjust top margin for smaller screens */
+        margin: 30% auto; 
         padding: 0px 15px 15px 15px;
     }
 
@@ -411,7 +411,7 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 /* about.css */
 
 .portfolio-about-section {
-    padding: 5rem 2rem;
+    padding: 5rem 3rem;
     background-color: #181818; /* Dark background */
     color: #f4f4f4; /* Light text */
     position: relative;
